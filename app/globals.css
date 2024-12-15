@@ -37,3 +37,7 @@ body {
     --radius: 0.5rem;
   }
 }
+
+* {
+  @apply min-w-0
+}

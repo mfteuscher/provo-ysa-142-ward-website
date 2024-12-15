@@ -12,7 +12,7 @@ export default async function Home() {
     <main className="grow font-sans grid p-10 gap-8 lg:grid-cols-2">
       <section>
         <h2 className="text-3xl font-semibold mb-6">Weekly Events</h2>
-        <div className="shadow-normal leading-8 text-gray-800 font-medium w-full bg-white p-8 whitespace-pre-line">
+        <div className="shadow-normal leading-8 text-gray-800 font-medium w-full bg-white p-8 whitespace-pre-line break-words">
           {weekly.value}
         </div>
       </section>
