@@ -8,6 +8,10 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+	fontFamily: {
+		sans: ["Inter var", "Inter", "sans-serif"],
+		serif: ["EB Garamond var", "serif"]
+	},
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
