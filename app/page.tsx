@@ -35,10 +35,15 @@ const groupmeLinks = [
   }
 ]
 
+type Data = {
+  id: string;
+  value: string;
+}
+
+
 export default async function Home() {
 
-  const { rows } = await sql`SELECT * FROM data`;
-  console.log(rows);
+  const { rows } = await sql<Data>`SELECT * FROM data`;
   const weekly = rows.find((row) => row.id === "weekly");
   const other = rows.find((row) => row.id === "other");
 
@@ -46,19 +51,19 @@ export default async function Home() {
     <main className="grow font-sans grid p-10 gap-8 lg:grid-cols-2">
       <section>
         <h2 className="text-3xl font-semibold mb-6">Weekly Events</h2>
-        <div className="shadow-normal leading-8 text-gray-800 font-medium w-full bg-white p-8 whitespace-pre-line break-words">
-          {weekly.value}
+        <div className="shadow-xl border-gray-300 border leading-8 text-gray-800 font-medium w-full bg-white p-8 whitespace-pre-line break-words">
+          {weekly?.value}
         </div>
       </section>
       <section>
       <h2 className="text-3xl font-semibold mb-6">Other events</h2>
-        <div className="shadow-normal leading-8 text-gray-800 font-medium w-full bg-white p-8 whitespace-pre-line break-words">
-          {other.value}
+        <div className="shadow-xl border-gray-300 border leading-8 text-gray-800 font-medium w-full bg-white p-8 whitespace-pre-line break-words">
+          {other?.value}
         </div>
       </section>
       <section>
         <h2 className="text-3xl font-semibold mb-6">Helpful Links</h2>
-        <ul className="shadow-normal text-sm md:text-base leading-8 text-gray-800 w-full bg-white p-8 whitespace-pre-line break-words divide-y">
+        <ul className="shadow-xl border-gray-300 border text-sm md:text-base leading-8 text-gray-800 w-full bg-white p-8 whitespace-pre-line break-words divide-y">
           {links.map(link => (
             <li key={link.href}>
               <a href={link.href} className="pl-6 block py-2 size-full hover:bg-blue-600 transition-colors hover:text-white hover:font-medium">{link.label}</a>

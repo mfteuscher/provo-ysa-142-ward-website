@@ -1,5 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
@@ -27,7 +28,13 @@ const nextConfig = {
 
     return config
   },
-
+  experimental: {
+		turbo: {
+			rules: {
+				'*.svg': { loaders: ['@svgr/webpack'], as: '*.js' },
+			},
+		},
+	},
 };
 
 export default nextConfig;
