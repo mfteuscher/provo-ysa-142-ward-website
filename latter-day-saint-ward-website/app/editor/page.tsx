@@ -5,7 +5,7 @@ import { PlateEditor } from '@/components/editor/plate-editor';
 
 export default function Page() {
   return (
-    <div className="h-screen w-full" data-registry="plate">
+    <div className="h-[600px] max-w-screen-md mx-auto border" data-registry="plate">
       {/* <SettingsProvider> */}
         <PlateEditor />
       {/* </SettingsProvider> */}

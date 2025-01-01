@@ -119,6 +119,7 @@ export function BlockContextMenu({ children }: { children: React.ReactNode }) {
           </ContextMenuItem>
           <ContextMenuItem
             onClick={() => {
+              console.log('duplicating')
               editor
                 .getTransforms(BlockSelectionPlugin)
                 .blockSelection.removeNodes();

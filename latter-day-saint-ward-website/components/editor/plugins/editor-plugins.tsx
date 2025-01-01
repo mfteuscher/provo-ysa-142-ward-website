@@ -26,7 +26,7 @@ import { FloatingToolbarPlugin } from '@/components/editor/plugins/floating-tool
 import { alignPlugin } from './align-plugin';
 import { autoformatPlugin } from './autoformat-plugin';
 import { basicNodesPlugins } from './basic-nodes-plugins';
-import { blockMenuPlugins } from './block-menu-plugins';
+// import { blockMenuPlugins } from './block-menu-plugins';
 import { commentsPlugin } from './comments-plugin';
 import { cursorOverlayPlugin } from './cursor-overlay-plugin';
 import { deletePlugins } from './delete-plugins';
@@ -81,7 +81,7 @@ export const editorPlugins = [
   SlashPlugin,
   autoformatPlugin,
   cursorOverlayPlugin,
-  ...blockMenuPlugins,
+  // ...blockMenuPlugins,
   EmojiPlugin,
   exitBreakPlugin,
   resetBlockTypePlugin,

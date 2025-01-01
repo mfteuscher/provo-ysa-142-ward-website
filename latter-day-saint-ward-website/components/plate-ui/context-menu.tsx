@@ -100,12 +100,7 @@ const ContextMenuContent = React.forwardRef<
 ));
 ContextMenuContent.displayName = ContextMenuPrimitive.Content.displayName;
 
-const ContextMenuItem = React.forwardRef<
-  React.ElementRef<typeof ContextMenuPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.Item> & {
-    inset?: boolean;
-  }
->(({ className, inset, ...props }, ref) => (
+const ContextMenuItem = ({ className, inset, ref, ...props }: React.ComponentPropsWithRef<typeof ContextMenuPrimitive.Item> & { inset?: boolean}) => (
   <ContextMenuPrimitive.Item
     ref={ref}
     className={cn(
@@ -115,7 +110,7 @@ const ContextMenuItem = React.forwardRef<
     )}
     {...props}
   />
-));
+);
 ContextMenuItem.displayName = ContextMenuPrimitive.Item.displayName;
 
 const ContextMenuCheckboxItem = React.forwardRef<

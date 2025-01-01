@@ -1,5 +1,4 @@
 import { withProps } from '@udecode/cn';
-import { AIPlugin } from '@udecode/plate-ai/react';
 import {
   BoldPlugin,
   CodePlugin,
@@ -158,11 +157,7 @@ export const useCreateEditor = () => {
       },
       {
         children: [
-          { text: 'A rich-text editor with AI capabilities. Try the ' },
-          { bold: true, text: 'AI commands' },
-          { text: ' or use ' },
-          { kbd: true, text: 'Cmd+J' },
-          { text: ' to open the AI menu.' },
+          { text: 'A rich-text editor' },
         ],
         type: ParagraphPlugin.key,
       },
