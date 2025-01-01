@@ -23,7 +23,6 @@ import { TrailingBlockPlugin } from '@udecode/plate-trailing-block';
 import { FixedToolbarPlugin } from '@/components/editor/plugins/fixed-toolbar-plugin';
 import { FloatingToolbarPlugin } from '@/components/editor/plugins/floating-toolbar-plugin';
 
-import { aiPlugins } from './ai-plugins';
 import { alignPlugin } from './align-plugin';
 import { autoformatPlugin } from './autoformat-plugin';
 import { basicNodesPlugins } from './basic-nodes-plugins';
@@ -31,7 +30,6 @@ import { blockMenuPlugins } from './block-menu-plugins';
 import { commentsPlugin } from './comments-plugin';
 import { cursorOverlayPlugin } from './cursor-overlay-plugin';
 import { deletePlugins } from './delete-plugins';
-import { dndPlugins } from './dnd-plugins';
 import { equationPlugins } from './equation-plugins';
 import { exitBreakPlugin } from './exit-break-plugin';
 import { indentListPlugins } from './indent-list-plugins';
@@ -75,8 +73,6 @@ export const viewPlugins = [
 ] as const;
 
 export const editorPlugins = [
-  // AI
-  ...aiPlugins,
 
   // Nodes
   ...viewPlugins,
@@ -86,7 +82,6 @@ export const editorPlugins = [
   autoformatPlugin,
   cursorOverlayPlugin,
   ...blockMenuPlugins,
-  ...dndPlugins,
   EmojiPlugin,
   exitBreakPlugin,
   resetBlockTypePlugin,

@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^1.0.11",
     "@ariakit/react": "^0.4.15",
     "@faker-js/faker": "^9.3.0",
     "@radix-ui/react-alert-dialog": "^1.1.4",
@@ -67,8 +66,6 @@
     "@udecode/plate-table": "^41.0.9",
     "@udecode/plate-toggle": "^41.0.0",
     "@udecode/plate-trailing-block": "^41.0.0",
-    "@uploadthing/react": "7.1.0",
-    "ai": "^4.0.22",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
@@ -84,7 +81,6 @@
     "react-dom": "^19.0.0",
     "react-lite-youtube-embed": "^2.4.0",
     "react-player": "^2.16.0",
-    "react-resizable-panels": "^2.1.7",
     "react-textarea-autosize": "^8.5.6",
     "react-tweet": "^3.2.1",
     "slate": "^0.112.0",
@@ -96,9 +92,7 @@
     "tailwind-merge": "^2.6.0",
     "tailwind-scrollbar-hide": "^2.0.0",
     "tailwindcss-animate": "^1.0.7",
-    "uploadthing": "7.2.0",
-    "use-file-picker": "^2.1.2",
-    "zod": "^3.24.1"
+    "use-file-picker": "^2.1.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

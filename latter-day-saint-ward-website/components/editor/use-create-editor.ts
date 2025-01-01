@@ -56,11 +56,9 @@ import {
 } from '@udecode/plate-table/react';
 import { TogglePlugin } from '@udecode/plate-toggle/react';
 
-import { copilotPlugins } from '@/components/editor/plugins/copilot-plugins';
 import { editorPlugins } from '@/components/editor/plugins/editor-plugins';
 import { FixedToolbarPlugin } from '@/components/editor/plugins/fixed-toolbar-plugin';
 import { FloatingToolbarPlugin } from '@/components/editor/plugins/floating-toolbar-plugin';
-import { AILeaf } from '@/components/plate-ui/ai-leaf';
 import { BlockquoteElement } from '@/components/plate-ui/blockquote-element';
 import { CodeBlockElement } from '@/components/plate-ui/code-block-element';
 import { CodeLeaf } from '@/components/plate-ui/code-leaf';
@@ -83,7 +81,6 @@ import { LinkElement } from '@/components/plate-ui/link-element';
 import { MediaAudioElement } from '@/components/plate-ui/media-audio-element';
 import { MediaEmbedElement } from '@/components/plate-ui/media-embed-element';
 import { MediaFileElement } from '@/components/plate-ui/media-file-element';
-import { MediaPlaceholderElement } from '@/components/plate-ui/media-placeholder-element';
 import { MediaVideoElement } from '@/components/plate-ui/media-video-element';
 import { MentionElement } from '@/components/plate-ui/mention-element';
 import { MentionInputElement } from '@/components/plate-ui/mention-input-element';
@@ -103,7 +100,6 @@ export const useCreateEditor = () => {
   return usePlateEditor({
     override: {
       components: withPlaceholders({
-        [AIPlugin.key]: AILeaf,
         [AudioPlugin.key]: MediaAudioElement,
         [BlockquotePlugin.key]: BlockquoteElement,
         [BoldPlugin.key]: withProps(PlateLeaf, { as: 'strong' }),
@@ -136,7 +132,6 @@ export const useCreateEditor = () => {
         [MentionInputPlugin.key]: MentionInputElement,
         [MentionPlugin.key]: MentionElement,
         [ParagraphPlugin.key]: ParagraphElement,
-        [PlaceholderPlugin.key]: MediaPlaceholderElement,
         [SlashInputPlugin.key]: SlashInputElement,
         [StrikethroughPlugin.key]: withProps(PlateLeaf, { as: 's' }),
         [SubscriptPlugin.key]: withProps(PlateLeaf, { as: 'sub' }),
@@ -152,7 +147,6 @@ export const useCreateEditor = () => {
       }),
     },
     plugins: [
-      ...copilotPlugins,
       ...editorPlugins,
       FixedToolbarPlugin,
       FloatingToolbarPlugin,
