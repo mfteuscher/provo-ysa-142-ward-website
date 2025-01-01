@@ -10,25 +10,25 @@ import {
   UnderlinePlugin,
 } from '@udecode/plate-basic-marks/react';
 import { useEditorReadOnly } from '@udecode/plate-common/react';
-import {
-  FontBackgroundColorPlugin,
-  FontColorPlugin,
-} from '@udecode/plate-font/react';
+// import {
+//   FontBackgroundColorPlugin,
+//   FontColorPlugin,
+// } from '@udecode/plate-font/react';
 import { HighlightPlugin } from '@udecode/plate-highlight/react';
-import {
-  AudioPlugin,
-  FilePlugin,
-  ImagePlugin,
-  VideoPlugin,
-} from '@udecode/plate-media/react';
+// import {
+//   AudioPlugin,
+//   FilePlugin,
+//   ImagePlugin,
+//   VideoPlugin,
+// } from '@udecode/plate-media/react';
 import {
   ArrowUpToLineIcon,
-  BaselineIcon,
+  // BaselineIcon,
   BoldIcon,
-  Code2Icon,
+  // Code2Icon,
   HighlighterIcon,
   ItalicIcon,
-  PaintBucketIcon,
+  // PaintBucketIcon,
   StrikethroughIcon,
   UnderlineIcon,
 } from 'lucide-react';
@@ -36,7 +36,7 @@ import {
 import { MoreDropdownMenu } from '@/components/plate-ui/more-dropdown-menu';
 
 import { AlignDropdownMenu } from './align-dropdown-menu';
-import { ColorDropdownMenu } from './color-dropdown-menu';
+// import { ColorDropdownMenu } from './color-dropdown-menu';
 import { CommentToolbarButton } from './comment-toolbar-button';
 import { EmojiDropdownMenu } from './emoji-dropdown-menu';
 import { ExportToolbarButton } from './export-toolbar-button';
@@ -52,7 +52,7 @@ import { InsertDropdownMenu } from './insert-dropdown-menu';
 import { LineHeightDropdownMenu } from './line-height-dropdown-menu';
 import { LinkToolbarButton } from './link-toolbar-button';
 import { MarkToolbarButton } from './mark-toolbar-button';
-import { MediaToolbarButton } from './media-toolbar-button';
+// import { MediaToolbarButton } from './media-toolbar-button';
 import { ModeDropdownMenu } from './mode-dropdown-menu';
 import { OutdentToolbarButton } from './outdent-toolbar-button';
 import { TableDropdownMenu } from './table-dropdown-menu';
