@@ -1,17 +1,7 @@
-import ChurchOfJesusChristWorldMark from '@/assets/ChurchOfJesusChristWorldMark.svg';
-import Image from 'next/image';
-
 export default function Header() {
 	return (
 		<header className="w-full pr-4 bg-white dark:bg-zinc-900 flex items-center">
 			<span className="flex h-20">
-				<span className="bg-[#007da5] h-full w-14 flex justify-center items-center">
-					<img
-						src="https://www.churchofjesuschrist.org/imgs/c730fd12d24c640f7649912008ddf828afd93403/full/60%2C/0/default.png"
-						alt=""
-						className="w-auto h-9"
-					/>
-				</span>
 				<span className="bg-white dark:bg-zinc-900 h-full">
 					<svg
 						viewBox="8 8 20 15"
